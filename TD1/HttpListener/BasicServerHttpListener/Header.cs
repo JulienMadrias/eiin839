@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace BasicServerHTTPlistener
 {
-    public class Header
+    class Header
     {
         HttpListenerRequest request;
-        public Header (HttpListenerRequest request)
+        public Header(HttpListenerRequest request)
         {
             this.request = request;
         }
