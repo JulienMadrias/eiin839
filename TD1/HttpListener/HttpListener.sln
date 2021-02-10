@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicServerHTTPlistener", "BasicServerHttpListener\BasicServerHTTPlistener.csproj", "{1FDD19DD-336D-4F00-93A9-1E3390EEA577}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EchoClient", "..\Echo\ChatClient\EchoClient.csproj", "{BDECA55D-9D99-40B1-804D-C1F4A2343BD9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EchoServer", "..\Echo\ChatServer\EchoServer.csproj", "{AF7CBAFA-A384-4680-BC17-47F5D35C1762}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{1FDD19DD-336D-4F00-93A9-1E3390EEA577}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1FDD19DD-336D-4F00-93A9-1E3390EEA577}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1FDD19DD-336D-4F00-93A9-1E3390EEA577}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDECA55D-9D99-40B1-804D-C1F4A2343BD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDECA55D-9D99-40B1-804D-C1F4A2343BD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDECA55D-9D99-40B1-804D-C1F4A2343BD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDECA55D-9D99-40B1-804D-C1F4A2343BD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF7CBAFA-A384-4680-BC17-47F5D35C1762}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF7CBAFA-A384-4680-BC17-47F5D35C1762}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF7CBAFA-A384-4680-BC17-47F5D35C1762}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF7CBAFA-A384-4680-BC17-47F5D35C1762}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
