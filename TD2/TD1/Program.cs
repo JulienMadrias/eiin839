@@ -5,9 +5,9 @@ using System.Net;
 using System.Text;
 using System.Web;
 
-namespace BasicServerHTTPlistener
+namespace TD1
 {
-    internal class Program
+    class Program
     {
         private static void Main(string[] args)
         {
@@ -18,8 +18,8 @@ namespace BasicServerHTTPlistener
                 Console.WriteLine("A more recent Windows version is required to use the HttpListener class.");
                 return;
             }
- 
- 
+
+
             // Create a listener.
             HttpListener listener = new HttpListener();
 
@@ -63,6 +63,8 @@ namespace BasicServerHTTPlistener
                 HttpListenerContext context = listener.GetContext();
                 HttpListenerRequest request = context.Request;
 
+                Header header = new Header(request);
+                Console.WriteLine(header.printUsefulHeaders());
                 string documentContents;
                 using (Stream receiveStream = request.InputStream)
                 {
@@ -71,7 +73,7 @@ namespace BasicServerHTTPlistener
                         documentContents = readStream.ReadToEnd();
                     }
                 }
-                
+
                 // get url 
                 Console.WriteLine($"Received request for {request.Url}");
 
