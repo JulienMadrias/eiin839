@@ -1,0 +1,13 @@
+C:\Users\user\source\repos\eiin839\TD2\MyExec\bin\Debug\netcoreapp3.1\MyExec.exe
+C:\Users\user\source\repos\eiin839\TD2\MyExec\bin\Debug\netcoreapp3.1\MyExec.deps.json
+C:\Users\user\source\repos\eiin839\TD2\MyExec\bin\Debug\netcoreapp3.1\MyExec.runtimeconfig.json
+C:\Users\user\source\repos\eiin839\TD2\MyExec\bin\Debug\netcoreapp3.1\MyExec.runtimeconfig.dev.json
+C:\Users\user\source\repos\eiin839\TD2\MyExec\bin\Debug\netcoreapp3.1\MyExec.dll
+C:\Users\user\source\repos\eiin839\TD2\MyExec\bin\Debug\netcoreapp3.1\MyExec.pdb
+C:\Users\user\source\repos\eiin839\TD2\MyExec\obj\Debug\netcoreapp3.1\MyExec.csprojAssemblyReference.cache
+C:\Users\user\source\repos\eiin839\TD2\MyExec\obj\Debug\netcoreapp3.1\MyExec.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\eiin839\TD2\MyExec\obj\Debug\netcoreapp3.1\MyExec.AssemblyInfo.cs
+C:\Users\user\source\repos\eiin839\TD2\MyExec\obj\Debug\netcoreapp3.1\MyExec.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\eiin839\TD2\MyExec\obj\Debug\netcoreapp3.1\MyExec.dll
+C:\Users\user\source\repos\eiin839\TD2\MyExec\obj\Debug\netcoreapp3.1\MyExec.pdb
+C:\Users\user\source\repos\eiin839\TD2\MyExec\obj\Debug\netcoreapp3.1\MyExec.genruntimeconfig.cache

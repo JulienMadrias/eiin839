@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Net;
+using System.Reflection;
 using System.Text;
 using System.Web;
 
-namespace HTTPListener
+namespace WebDynamic
 {
     class Program
     {
-        private static void Main(string[] args)
+        static void Main(string[] args)
         {
-
             //if HttpListener is not supported by the Framework
             if (!HttpListener.IsSupported)
             {
@@ -63,8 +63,6 @@ namespace HTTPListener
                 HttpListenerContext context = listener.GetContext();
                 HttpListenerRequest request = context.Request;
 
-                Header header = new Header(request);
-                Console.WriteLine(header.printUsefulHeaders());
                 string documentContents;
                 using (Stream receiveStream = request.InputStream)
                 {
@@ -111,8 +109,15 @@ namespace HTTPListener
                 HttpListenerResponse response = context.Response;
 
                 // Construct a response.
-                string responseString = "<HTML><BODY> Hello world!</BODY></HTML>";
-                byte[] buffer = System.Text.Encoding.UTF8.GetBytes(responseString);
+
+                // http://localhost:8080/le/bonsoir/Thierry/MyMethod?param1=bonjour&param2=bienvenue
+                // http://localhost:8080/le/bonsoir/Thierry/MyExec?param1=bonjour&param2=bienvenue
+                Type type = typeof(Mymethods);
+                string methodToCall = request.Url.Segments[request.Url.Segments.Length - 1];
+                MethodInfo method = type.GetMethod(methodToCall);
+                Mymethods c = new Mymethods();
+                string result = (string)method.Invoke(c, new Object[] { HttpUtility.ParseQueryString(request.Url.Query).Get("param1"), HttpUtility.ParseQueryString(request.Url.Query).Get("param2") });
+                byte[] buffer = System.Text.Encoding.UTF8.GetBytes(result);
                 // Get a response stream and write the response to it.
                 response.ContentLength64 = buffer.Length;
                 System.IO.Stream output = response.OutputStream;
@@ -123,5 +128,6 @@ namespace HTTPListener
             // Httplistener neither stop ... But Ctrl-C do that ...
             // listener.Stop();
         }
+
     }
 }

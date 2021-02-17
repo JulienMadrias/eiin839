@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\source\\repos\\eiin839\\TD2\\TD1\\HTTPListener.csproj",
-      "projectName": "HTTPListener",
-      "projectPath": "C:\\Users\\user\\source\\repos\\eiin839\\TD2\\TD1\\HTTPListener.csproj",
+      "projectUniqueName": "C:\\Users\\user\\source\\repos\\eiin839\\TD2\\WebDynamic\\WebDynamic.csproj",
+      "projectName": "WebDynamic",
+      "projectPath": "C:\\Users\\user\\source\\repos\\eiin839\\TD2\\WebDynamic\\WebDynamic.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\source\\repos\\eiin839\\TD2\\TD1\\obj\\",
+      "outputPath": "C:\\Users\\user\\source\\repos\\eiin839\\TD2\\WebDynamic\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
